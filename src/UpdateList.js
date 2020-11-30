@@ -12,7 +12,7 @@ function App(){
 
     return (
         <div>
-            <div>{user.title}</div>
+            <div>{user}</div>
         </div>
     )
 }
