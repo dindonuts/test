@@ -49,8 +49,9 @@ class TodoList extends Component {
 			    </form>
 			    <TodoItems entries={this.state.items} delete={this.deleteItem} />
 			  </div>
+			  <div className="update"><UpdateList/></div>
+
 		        </div>
-				<div><UpdateList/></div>
 		);
 	}
 }
