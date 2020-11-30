@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import TodoItems from "./TodoItems";
+import UpdateList from "./UpdateList";
+
 
 class TodoList extends Component {
 	constructor(props){
@@ -8,7 +10,7 @@ class TodoList extends Component {
 		this.addItem = this.addItem.bind(this);
 		this.deleteItem = this.deleteItem.bind(this);
 	}
-	
+
 	addItem(e){
 		if(this._inputElement.value !== ""){
 			var newItem = {
@@ -48,6 +50,7 @@ class TodoList extends Component {
 			    <TodoItems entries={this.state.items} delete={this.deleteItem} />
 			  </div>
 		        </div>
+				<div><UpdateList/></div>
 		);
 	}
 }
